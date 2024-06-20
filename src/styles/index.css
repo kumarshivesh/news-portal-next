@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #333;
+  color: #fff;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+
+.logo-favorites {
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    column-gap: 15px;
+  }
+}
+
+.logo-text {
+  font-size: 40px;
+  font-weight: bolder;
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+.favorites {
+  text-decoration: underline; 
+  color: inherit;
+  padding: 0; 
+  margin: 0; 
+  font: inherit; 
+  cursor: pointer; 
+  font-size: larger;
+  font-weight: 700;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.articles-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.article-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  overflow: hidden;
+  background-color: white;
+}
+
+.article-card img {
+  width: 100%;
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  border-radius: 5px;
+}
+
+.article-card h2 {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.article-card p {
+  padding: 0.5rem;
+}
+
+.botton-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #0070f3;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.save {
+  background-color: #e4b721;
+  color: black;
+}
+
+.remove {
+  background-color: #ff0000;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.pagination button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.article-detail {
+  padding: 1rem;
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.pagination button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Favorites page styles */
+.favorites-head {
+  background: #333;
+  color: #fff;
+  padding: 1.5rem;
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 0px;
+  text-align: center;
+}
+
+
+.article-detail img {
+  width: 100%;
+  height: auto;
+}
+

@@ -1,0 +1,9 @@
+/* Example styles for the home page */
+.loading {
+  text-align: center;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
