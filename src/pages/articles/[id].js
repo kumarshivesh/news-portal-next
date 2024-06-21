@@ -1,7 +1,8 @@
 import { useRouter } from 'next/router';
 import { useSelector } from 'react-redux';
 import Navbar from '../../components/Navbar';
-import styles from '../../styles/Article.module.css';
+
+
 
 const ArticlePage = () => {
   const router = useRouter();
